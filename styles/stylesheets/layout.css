@@ -103,6 +103,7 @@ header .row {
 }
 
 
+
 #intro ul.list-services li {
 	font-family: 'open sans';
 	color: white;
@@ -171,7 +172,7 @@ header .row {
 	transition: 0.2s ease-in;
 }
 
-#intro .order-form button:hover, .nav-button:hover {
+#intro .get-in-touch-form button:hover, .nav-button:hover {
 	background: #41352B;
 	cursor: pointer;
 	-webkit-transition: 0.2s ease-in;
@@ -179,6 +180,8 @@ header .row {
 	-ms-transition: 0.2s ease-in;
 	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
+    border: none;
+    color: #fff;
 }
 
 /*Services*/
@@ -202,7 +205,7 @@ header .row {
 }
 
 #services .service-media {
-     height: 275px;
+    min-height: 275px;
     overflow: hidden;
 }
 
@@ -320,6 +323,15 @@ footer#footer p.copyrights {
 	text-align: center;
 }
 
+#footer ul.required-links {
+    text-align: center;
+}
+
+#footer .required-links li{
+    display:inline-block;
+
+}
+
 
 /* #Page Styles
 ================================================== */
@@ -328,13 +340,33 @@ footer#footer p.copyrights {
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+         #services .service-feature-box {
+            margin: 10px 0 20px;
+        }
+
+      
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+    
+        header .logo {
+        text-align: center;
+       }
+
+        header .logo .custom-heading {
+            display: inline-block;
+            width: inherit;
+        }
+
+        #intro .main-text p, #intro .main-text ul li{
+             text-align:center;
+        }
+
 		section#intro .order-form input {
 			width: 100% !important;
 		}
